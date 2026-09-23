@@ -1,0 +1,4 @@
+# Word-frequency corpora, downloaded on demand by scripts/score-layouts.py.
+corpus/
+.DS_Store
+__pycache__/
