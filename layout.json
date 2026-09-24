@@ -1,6 +1,6 @@
 {
   "name": "Colemak-Viet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Colemak, with the DH mod, retuned for the Telex keystream of Vietnamese.",
   "comment": [
     "Source of truth for every generated file in dist/. Each row lists the letters",
@@ -9,16 +9,15 @@
     "Colemak-DH-angle.",
     "QWERTY, for reference:  qwertyuiop / asdfghjkl; / zxcvbnm,./"
   ],
-  "shortcut_letters_left": "cvstrax",
+  "shortcut_letters_left": "cvstraz",
   "shortcut_note": [
-    "Letters that must stay on the left half so Cmd+C/V/S/T/R/A/X still work",
-    "one-handed. `z` (Cmd+Z, undo) was on this list until x took the B key;",
-    "it now sits in the top-right index slot. Swapping x and z puts it back —",
-    "the model scores the two arrangements within 0.1% of each other."
+    "Letters that must stay on the left half so Cmd+C/V/S/T/R/A/Z still work",
+    "one-handed. `x` (Cmd+X, cut) left this list in 1.1.0: it moved to the",
+    "top-right corner so the B key could hand Cmd+Z back to the left hand."
   ],
   "rows": {
-    "top": "qwfgbzluy;",
+    "top": "qwfgb;luyx",
     "home": "ahstpmneoi",
-    "bottom": "jvrcxkd,./"
+    "bottom": "jvrczkd,./"
   }
 }

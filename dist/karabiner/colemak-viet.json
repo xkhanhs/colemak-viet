@@ -64,7 +64,7 @@
           },
           "to": [
             {
-              "key_code": "z"
+              "key_code": "semicolon"
             }
           ]
         },
@@ -128,7 +128,7 @@
           },
           "to": [
             {
-              "key_code": "semicolon"
+              "key_code": "x"
             }
           ]
         },
@@ -352,7 +352,7 @@
           },
           "to": [
             {
-              "key_code": "x"
+              "key_code": "z"
             }
           ]
         },

@@ -10,9 +10,9 @@ English: [README.md](README.md)
 
 ```
  `   1  2  3  4  5  6  7  8  9  0  -  =
- Tab   q  w  f  g  b     z  l  u  y  ;   [  ]  \
+ Tab   q  w  f  g  b     ;  l  u  y  x   [  ]  \
  Caps   a  h  s  t  p     m  n  e  o  i   '
- Shift   j  v  r  c  x     k  d  ,  .  /
+ Shift   j  v  r  c  z     k  d  ,  .  /
 ```
 
 File dựng sẵn cho macOS, Windows và Linux nằm trong [`dist/`](dist/) —
@@ -33,7 +33,7 @@ cùng ngón:
 | bố cục | các cặp cùng ngón nặng nhất, tiếng Việt |
 |---|---|
 | Colemak-DH-angle | `nh` 19,8‰, `kh` 11,0‰, `wc` 5,5‰, `ax` 4,1‰, `nj` 4,1‰ |
-| Colemak-Viet | `eu` 3,8‰, `gx` 2,1‰, `aj` 0,5‰, `nd` 0,3‰, `ue` 0,3‰ |
+| Colemak-Viet | `eu` 3,8‰, `ix` 2,0‰, `xi` 0,7‰, `aj` 0,5‰, `nd` 0,3‰ |
 
 Toàn bộ ý tưởng nằm ở đó. Mọi thứ còn lại chỉ là gỡ mấy cặp ấy ra khỏi một ngón
 mà không phá những chỗ Colemak vốn làm đúng.
@@ -48,7 +48,7 @@ trước. Effort thấp là tốt; SFB là tỉ lệ cặp phím cùng ngón.
 
 | bố cục | effort | SFB | hàng nhà | út phải | út trái | tay trái | đảo tay |
 |---|---|---|---|---|---|---|---|
-| **Colemak-Viet** | **1,629** | **0,84%** | 61% | 5,9% | 13,8% | 54% | 52% |
+| **Colemak-Viet** | **1,629** | **0,91%** | 61% | 7,2% | 13,8% | 53% | 52% |
 | Workman | 1,631 (+0%) | 2,84% | 63% | 5,9% | 11,0% | 54% | 53% |
 | Colemak-DH | 1,700 (+4%) | 4,86% | 60% | 10,6% | 11,0% | 50% | 51% |
 | Dvorak | 1,719 (+5%) | 3,40% | 67% | 7,6% | 10,8% | 45% | 57% |
@@ -57,7 +57,7 @@ trước. Effort thấp là tốt; SFB là tỉ lệ cặp phím cùng ngón.
 | QWERTY | 1,863 (+14%) | 8,30% | 41% | 0,7% | 11,0% | 55% | 52% |
 
 Cặp cùng ngón giảm sáu lần so với Colemak-DH-angle, và ngón út phải — thứ đang
-gánh `o`, chữ nặng nhất tiếng Việt, trên Colemak gốc — mất gần một nửa việc.
+gánh `o`, chữ nặng nhất tiếng Việt, trên Colemak gốc — bớt khoảng một phần ba việc.
 
 ### Tiếng Anh, nói thẳng
 
@@ -67,15 +67,15 @@ và điều đó lộ ra đúng chỗ ai cũng đoán được:
 
 | bố cục | effort | SFB | hàng nhà | út phải | út trái | tay trái | đảo tay |
 |---|---|---|---|---|---|---|---|
-| **Colemak-Viet** | **1,555** | **5,85%** | 67% | 7,2% | 8,1% | 47% | 49% |
+| **Colemak-Viet** | **1,555** | **5,79%** | 67% | 7,3% | 8,1% | 47% | 49% |
 | Workman | 1,559 (+0%) | 2,47% | 68% | 7,2% | 7,9% | 50% | 53% |
 | Colemak-DH | 1,575 (+1%) | **1,18%** | 67% | 9,1% | 7,9% | 44% | 55% |
 | Colemak-DH-angle | 1,584 (+2%) | 1,31% | 67% | 9,1% | 7,9% | 44% | 55% |
 | Colemak | 1,602 (+3%) | 1,18% | 71% | 9,1% | 7,9% | 44% | 55% |
-| Dvorak | 1,687 (+8%) | 2,36% | 69% | 9,9% | 8,9% | 46% | 69% |
+| Dvorak | 1,687 (+9%) | 2,36% | 69% | 9,9% | 8,9% | 46% | 69% |
 | QWERTY | 1,951 (+25%) | 5,93% | 32% | 1,5% | 7,9% | 54% | 51% |
 
-Effort và hàng nhà thì ngang tầm Colemak. Cặp cùng ngón thì không: 5,85%, gấp
+Effort và hàng nhà thì ngang tầm Colemak. Cặp cùng ngón thì không: 5,79%, gấp
 năm lần Colemak-DH và ngang ngửa QWERTY. Ba cặp chiếm phần lớn con số đó —
 `yo` (17,5‰), `nd` (10,3‰), `wh` (7,8‰) — vì `o` dời xuống dưới `y`, `d` xuống
 dưới `n`, và `h` xuống dưới `w`. Trên một bảng từ tiếng Anh nặng văn viết thay
@@ -101,12 +101,13 @@ phím dời chỗ:
 | `p` ↔ `g` | `g` 51‰, phần lớn đến từ `ng` 44‰, không đáng phải trả giá cột giữa |
 | `o` ↔ `i` | `o` là chữ nặng nhất tiếng Việt, 131‰. Nó không thể ngồi ngón út |
 | `j` xuống góc trái dưới | `j` là dấu nặng; rời ngón trỏ phải thì hết đụng `nj`, `mj`, `hj` |
-| `x` sang phím B | `x` là dấu hiếm nhất (5,5% số từ) nên đỗ được ở chỗ với |
-| `z` lên ô trỏ phải hàng trên | `z` gần như 0‰ trong tiếng Việt; nó nhận phím đắt nhất bàn phím |
+| `x` lên góc phải trên, chỗ của `;` | `x` là dấu hiếm nhất (5,5% số từ) nên chịu được ngón út; cái giá là cặp `ix` 2,0‰, cặp cùng ngón duy nhất nó thêm vào |
+| `;` lên ô trỏ phải hàng trên, chỗ của `j` | ký tự duy nhất bị các phép đổi kia bỏ rơi; tiếng Việt gần như không dùng, và ô ấy là phím đắt nhất bàn phím |
 
 Hai thứ bị giữ chặt, và chúng loại bỏ vài phương án chấm điểm cao hơn:
 
-- **`c v s t r a x` ở lại nửa trái**, để Cmd+C/V/S/T/R/A/X còn bấm một tay. Bỏ
+- **`c v s t r a z` ở lại nửa trái**, để Cmd+C/V/S/T/R/A/Z còn bấm một tay.
+  Riêng Cmd+X phải sang tay phải. Bỏ
   ràng buộc này chỉ mua thêm khoảng 2% trong mô hình, đổi lại là mọi phím tắt
   bạn đã thuộc.
 - **Năm phím dấu Telex `s f r x j` không bị xếp lại.** Đã duyệt: toàn bộ 55.440
@@ -115,7 +116,8 @@ Hai thứ bị giữ chặt, và chúng loại bỏ vài phương án chấm đi
   mô hình effort — tức nhiễu — mà cái giá thì trả mỗi ngày trên mọi bàn phím
   khác trong đời.
 
-`;` giữ nguyên vị trí gốc: tiếng Việt gần như không dùng tới, còn code thì cần.
+`z` giữ vị trí angle mod ở phím B: gần như 0‰ trong tiếng Việt, và ở đó
+Cmd+Z (hoàn tác) vẫn bấm một tay.
 
 Chi tiết hơn, gồm cả bảng xếp hạng với 28 bố cục khác và những phương án đã bị
 loại: [docs/comparison.md](docs/comparison.md).

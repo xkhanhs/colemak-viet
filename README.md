@@ -10,9 +10,9 @@ Tiếng Việt: [README.vi.md](README.vi.md)
 
 ```
  `   1  2  3  4  5  6  7  8  9  0  -  =
- Tab   q  w  f  g  b     z  l  u  y  ;   [  ]  \
+ Tab   q  w  f  g  b     ;  l  u  y  x   [  ]  \
  Caps   a  h  s  t  p     m  n  e  o  i   '
- Shift   j  v  r  c  x     k  d  ,  .  /
+ Shift   j  v  r  c  z     k  d  ,  .  /
 ```
 
 Ready-made files for macOS, Windows and Linux are in [`dist/`](dist/) —
@@ -33,7 +33,7 @@ OpenSubtitles corpus of 50k Vietnamese words, those two bigrams alone are
 | layout | worst same-finger bigrams, Vietnamese |
 |---|---|
 | Colemak-DH-angle | `nh` 19.8‰, `kh` 11.0‰, `wc` 5.5‰, `ax` 4.1‰, `nj` 4.1‰ |
-| Colemak-Viet | `eu` 3.8‰, `gx` 2.1‰, `aj` 0.5‰, `nd` 0.3‰, `ue` 0.3‰ |
+| Colemak-Viet | `eu` 3.8‰, `ix` 2.0‰, `xi` 0.7‰, `aj` 0.5‰, `nd` 0.3‰ |
 
 That is the whole idea. Everything else follows from getting those pairs off one
 finger without breaking the things Colemak got right.
@@ -48,7 +48,7 @@ Telex keystrokes first. Lower effort is better; SFB is same-finger bigrams.
 
 | layout | effort | SFB | home row | R pinky | L pinky | left hand | alternation |
 |---|---|---|---|---|---|---|---|
-| **Colemak-Viet** | **1.629** | **0.84%** | 61% | 5.9% | 13.8% | 54% | 52% |
+| **Colemak-Viet** | **1.629** | **0.91%** | 61% | 7.2% | 13.8% | 53% | 52% |
 | Workman | 1.631 (+0%) | 2.84% | 63% | 5.9% | 11.0% | 54% | 53% |
 | Colemak-DH | 1.700 (+4%) | 4.86% | 60% | 10.6% | 11.0% | 50% | 51% |
 | Dvorak | 1.719 (+5%) | 3.40% | 67% | 7.6% | 10.8% | 45% | 57% |
@@ -58,7 +58,7 @@ Telex keystrokes first. Lower effort is better; SFB is same-finger bigrams.
 
 Same-finger bigrams drop by a factor of six against Colemak-DH-angle, and the
 right pinky — which carries `o`, the single heaviest letter in Vietnamese, on
-stock Colemak — loses nearly half its work.
+stock Colemak — loses about a third of its work.
 
 ### English, honestly
 
@@ -68,16 +68,16 @@ shows in exactly the place you would expect:
 
 | layout | effort | SFB | home row | R pinky | L pinky | left hand | alternation |
 |---|---|---|---|---|---|---|---|
-| **Colemak-Viet** | **1.555** | **5.85%** | 67% | 7.2% | 8.1% | 47% | 49% |
+| **Colemak-Viet** | **1.555** | **5.79%** | 67% | 7.3% | 8.1% | 47% | 49% |
 | Workman | 1.559 (+0%) | 2.47% | 68% | 7.2% | 7.9% | 50% | 53% |
 | Colemak-DH | 1.575 (+1%) | **1.18%** | 67% | 9.1% | 7.9% | 44% | 55% |
 | Colemak-DH-angle | 1.584 (+2%) | 1.31% | 67% | 9.1% | 7.9% | 44% | 55% |
 | Colemak | 1.602 (+3%) | 1.18% | 71% | 9.1% | 7.9% | 44% | 55% |
-| Dvorak | 1.687 (+8%) | 2.36% | 69% | 9.9% | 8.9% | 46% | 69% |
+| Dvorak | 1.687 (+9%) | 2.36% | 69% | 9.9% | 8.9% | 46% | 69% |
 | QWERTY | 1.951 (+25%) | 5.93% | 32% | 1.5% | 7.9% | 54% | 51% |
 
 Effort and home-row use are Colemak-class. Same-finger bigrams are not: at
-5.85% they are five times Colemak-DH's and level with QWERTY. Three pairs
+5.79% they are five times Colemak-DH's and level with QWERTY. Three pairs
 account for most of it — `yo` (17.5‰), `nd` (10.3‰), `wh` (7.8‰) — because `o`
 moved under `y`, `d` moved under `n`, and `h` moved under `w`. On a
 prose-weighted English list rather than subtitles the total falls to 4.7%,
@@ -103,14 +103,14 @@ keys move:
 | `p` ↔ `g` | `g` is 51‰, mostly from `ng` at 44‰, and should not be paying the centre-column stretch |
 | `o` ↔ `i` | `o` is the heaviest letter in Vietnamese at 131‰. It cannot sit on the pinky |
 | `j` → bottom-left corner | `j` is the heavy tone mark; off the right index it stops colliding with `nj`, `mj`, `hj` |
-| `x` → the B key | `x` is the rarest tone mark (5.5% of words) and parks in the stretch |
-| `z` → the top-right index slot | `z` is effectively 0‰ in Vietnamese; it goes to the most expensive key on the board |
+| `x` → the top-right corner, where `;` was | `x` is the rarest tone mark (5.5% of words) and can take the pinky; it costs `ix` 2.0‰, the one same-finger pair it adds |
+| `;` → the top-right index slot, where `j` was | the one character the other swaps orphan; Vietnamese barely uses it, and that slot is the most expensive key on the board |
 
 Two things are held fixed, and they rule out several arrangements that score
 better:
 
-- **`c v s t r a x` stay on the left half**, so Cmd+C/V/S/T/R/A/X remain
-  one-handed. Dropping this constraint buys about 2% in the model, and costs
+- **`c v s t r a z` stay on the left half**, so Cmd+C/V/S/T/R/A/Z remain
+  one-handed. Cmd+X is the one that crosses to the right hand. Dropping this constraint buys about 2% in the model, and costs
   every shortcut you already know.
 - **The Telex mark keys `s f r x j` are not remapped.** They were audited: all
   55,440 ways of placing five marks on eleven safe keys were scored on a
@@ -118,7 +118,8 @@ better:
   The best alternative wins 1–3% depending on the effort model — noise — and
   you would pay for it on every other keyboard you ever touch.
 
-`;` keeps its stock position: Vietnamese barely uses it and code needs it.
+`z` keeps its angle-mod position on the B key: it is effectively 0‰ in
+Vietnamese, and there it keeps Cmd+Z, undo, one-handed.
 
 More detail, including a ranking against 28 other layouts and the arguments
 that were rejected: [docs/comparison.md](docs/comparison.md).

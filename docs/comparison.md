@@ -47,11 +47,14 @@ difference under about 2% as the model failing to have an opinion. This is not
 a rhetorical caveat: it is why the design stopped where it did — see *What was
 rejected*, below.
 
-One known blind spot: the model charges Colemak-Viet for `gx` (2.1‰, from
-`những` and `cũng`), because `g` and `x` both sit in the left index column. The
-typist this was tuned for presses the B key with the *right* index, so for them
-that pair is a hand alternation rather than a same-finger bigram. Your hands
-decide which of the two is true.
+Where to put `x` is exactly such a sub-noise call. Three homes were tried: the
+top-right corner, the old Y slot, and the B key. The model rates them within a
+fraction of a percent of each other. Version 1.0.0 shipped with `x` on B and
+`z` in the Y slot; after typing on it, 1.1.0 put `x` back in the corner, `;`
+in the Y slot and `z` on B. In the corner `x` costs `ix` (2.0‰) on the right pinky; on
+B it cost `gx` (2.1‰, from `những` and `cũng`) in the left index column — a
+pair that is not same-finger at all for a typist who presses B with the
+*right* index. Your hands decide which of these is true.
 
 ## The 29-layout ranking (earlier study, September 2026)
 
@@ -59,8 +62,8 @@ Scored on the same Vietnamese corpus but with a heavier objective:
 `effort + 15×SFB + 3×LSB + 2×(pinky use above 20%)`, with layouts taken verbatim
 from [semilin/genkey](https://github.com/semilin/genkey), from their authors'
 READMEs (Graphite, Canary), or from the author's repo images (Gallium). The
-Colemak-Viet variant measured here is the one that had `x` in the top-right
-corner rather than on the B key; the two score within 0.1% of each other.
+Colemak-Viet measured here is the current one, with `x` in the top-right
+corner.
 
 **This table cannot be regenerated from this repository.** It is reproduced
 because the conclusion matters and the method should be public, not because the
@@ -131,10 +134,10 @@ difference, not because every idea was tried and beaten.
 
 ## Open questions
 
-- Should `z` go back to the left half? Since `x` took the B key, `z` sits in the
-  top-right index slot and **Cmd+Z is no longer a one-handed shortcut**. Putting
-  `x` back in the Y slot and `z` on B restores it, and the model rates the two
-  arrangements as equivalent.
+- Cmd+Z or Cmd+X on the left hand? Only one of `x` and `z` can take the B key
+  without costing something else. 1.1.0 gives it to `z`, so undo stays
+  one-handed and **Cmd+X crosses to the right hand**. 1.0.0 made the opposite
+  call; the model does not prefer either.
 - The English same-finger cost (`yo`, `nd`, `wh`) has never been weighed against
   the Vietnamese gain in a single objective, because no one has said what the
   right mix of the two languages is. If you type more English than Vietnamese,
