@@ -41,7 +41,7 @@ LAYOUTS = {
     "Colemak-DH": ("qwfpbjluy;", "arstgmneio", "zxcdvkh,./"),
     "Colemak-DH-angle": ("qwfpbjluy;", "arstgmneio", "xcdvzkh,./"),
     "Workman": ("qdrwbjfup;", "ashtgyneoi", "zxmcvkl,./"),
-    "Colemak-Viet": ("qwfgbzluy;", "ahstpmneoi", "jvrcxkd,./"),
+    "Colemak-Viet": ("qwfgb;luyx", "ahstpmneoi", "jvrczkd,./"),
 }
 
 # Cost per physical key (lower is better), and the finger that presses it.

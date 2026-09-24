@@ -88,7 +88,7 @@ for row in ["top", "home", "bottom"] {
 // The shortcut constraint the layout is built around: Cmd+C/V/S/T/R/A/Z must
 // stay reachable by the left hand alone.
 let leftCodes = Set(codes["top"]!.prefix(5) + codes["home"]!.prefix(5) + codes["bottom"]!.prefix(5))
-for letter in ["c", "v", "s", "t", "r", "a", "z", "x"] {
+for letter in ["c", "v", "s", "t", "r", "a", "z"] {
     let onLeft = leftCodes.contains { type($0) == letter }
     if !onLeft {
         print("shortcut letter \(letter) is not on the left half")

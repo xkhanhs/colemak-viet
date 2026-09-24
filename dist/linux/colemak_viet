@@ -14,11 +14,11 @@ xkb_symbols "basic" {
     key <AD03> { [ f, F ] };
     key <AD04> { [ g, G ] };
     key <AD05> { [ b, B ] };
-    key <AD06> { [ z, Z ] };
+    key <AD06> { [ semicolon, colon ] };
     key <AD07> { [ l, L ] };
     key <AD08> { [ u, U ] };
     key <AD09> { [ y, Y ] };
-    key <AD10> { [ semicolon, colon ] };
+    key <AD10> { [ x, X ] };
     key <AC01> { [ a, A ] };
     key <AC02> { [ h, H ] };
     key <AC03> { [ s, S ] };
@@ -33,7 +33,7 @@ xkb_symbols "basic" {
     key <AB02> { [ v, V ] };
     key <AB03> { [ r, R ] };
     key <AB04> { [ c, C ] };
-    key <AB05> { [ x, X ] };
+    key <AB05> { [ z, Z ] };
     key <AB06> { [ k, K ] };
     key <AB07> { [ d, D ] };
     key <AB08> { [ comma, less ] };
